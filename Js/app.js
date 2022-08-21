@@ -27,7 +27,7 @@ function selectInputFieldValue(elementId){
    
 }
 
-
+// this is for dispalying value.
 function displaySetValue(elementId,value){
     const inputField=document.getElementById(elementId);
     inputField.innerText=value;
@@ -68,5 +68,10 @@ document.getElementById("calculate-expense").addEventListener("click", function(
 
     const perPlayerCoast=selectInputFieldValue("per-players");
     console.log("perPlayerCoast : ",perPlayerCoast);
+
+    const playerExpense=perPlayerCoast*length
+    console.log("playerExpense : ",playerExpense);
+
+    displaySetValue("player-expenses",playerExpense)
 
 });
