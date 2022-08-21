@@ -75,3 +75,14 @@ document.getElementById("calculate-expense").addEventListener("click", function(
     displaySetValue("player-expenses",playerExpense)
 
 });
+
+document.getElementById("calculate-total").addEventListener("click",function(e) {
+   const managerCoast= selectInputFieldValue("manager")
+   const coashCoast=selectInputFieldValue("coach");
+   const playerExpense=document.getElementById("player-expenses");
+   const playerExpenseCoast=Number(playerExpense.innerText)
+
+   const totalCoast=managerCoast+coashCoast+ playerExpenseCoast;
+   console.log("totalCoast : ",totalCoast);
+   displaySetValue("total-coast",totalCoast);
+})
