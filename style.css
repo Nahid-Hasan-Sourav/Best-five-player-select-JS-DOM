@@ -15,7 +15,7 @@ body{
      
 }
 .banner-text{
-    width: 70%;
+    width: 79%;
 }
 .banner-text h1{
     font-size:2.2rem;
@@ -33,12 +33,15 @@ body{
 } */
 
 .card img{
-    height: 250px;
+    height: 180px;
     
 }
-
+li{
+    margin: 15px 0px;
+}
 .list-item{
-    height: 447px;
+    height:365px;
+    
 }
 
 .btn-common:focus{
