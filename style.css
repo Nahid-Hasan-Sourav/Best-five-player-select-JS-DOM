@@ -34,6 +34,11 @@ body{
 
 .card img{
     height: 250px;
+    
+}
+
+.list-item{
+    height: 447px;
 }
 
 @media (max-width:575px){
