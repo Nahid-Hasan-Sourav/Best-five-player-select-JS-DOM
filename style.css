@@ -1,0 +1,104 @@
+body{
+    background-color:rgb(10, 9, 9);
+}
+
+#container{
+   
+}
+.col-lg-4{
+    height: 100%;
+}
+.ronaldo{
+    height:400px;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+     
+}
+.banner-text{
+    width: 70%;
+}
+.banner-text h1{
+    font-size:2.2rem;
+    text-align:left;
+    font-family: 'Berkshire Swash', cursive;
+}
+.banner-text p{
+    text-align: center;
+}
+
+/* .btn-common{
+    display: block;
+    width: 70%;
+    margin: auto;
+} */
+
+.card img{
+    height: 250px;
+}
+
+@media (max-width:575px){
+    .banner-text{
+        width: 100%;
+       
+    }
+    .banner-text h1{
+        font-size:1.5rem;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .ronaldo{
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .banner-text p{
+        text-align: center;
+    }
+}
+
+
+@media (min-width:576px) and (max-width:688px){
+    .banner-text{
+        width: 100%;
+       
+    }
+    .banner-text h1{
+        font-size:2.5rem;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .banner-text p{
+        text-align: center;
+    }
+    .ronaldo{
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+    }
+}
+
+
+@media(min-width:689px) and (max-width:992px){
+    .banner-text{
+        width: 90%;
+       
+       
+    }
+    .ronaldo{
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .banner-text h1{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1199.98px) { }
+
+
+@media (max-width: 1399.98px) {}
+
