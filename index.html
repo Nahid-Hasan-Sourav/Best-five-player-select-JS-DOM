@@ -198,10 +198,37 @@
                                 <div class="card-body fw-bold bg-dark">
                                     <h1 class="text-center">Budget</h1>
                                 </div>
-                                <div class="per-player">
-                                    <label for="per-player">Per PLayer</label>
-                                    <input type="text" id="per-player">
+
+                               <form>
+                                <div class="per-player px-2 text-center">
+                                    <label for="per-player">Per Player</label>
+                                    <input type="text" id="per-player" class="w-50 border ms-2 text-white">
                                 </div>
+
+                                <div class="button-text ">
+                                    <button type="button" class="btn btn-primary d-block w-75 mx-auto my-4 fw-bold">CALCULATE</button>
+                                    <h5 class="text-white text-center my-2">Player Expenses <span>$<span id="player-expenses" >5000</span>
+                                    </span></h5>
+                                </div>
+
+                                <div class="per-player px-2 text-center mt-3">
+                                    <label for="manager">Manager</label>
+                                    <input type="text" id="manager" class="w-50 border ms-3 text-white">
+                                </div>
+                                <div class="per-player px-2 text-center my-3">
+                                    <label for="coach" class="ms-1">Coach</label>
+                                    <input type="text" id="coach" class="w-50 border ms-4 text-white">
+                                </div>
+
+                                <div class="button-text ">
+                                    <button type="button" class="btn btn-primary d-block w-75 mx-auto my-4 fw-bold">CALCULATE TOTAL</button>
+                                    <div class="total d-flex justify-content-around text-white">
+                                        <h4>Total</h4>
+                                        <h4>$00</h4>
+                                    </div>
+                                </div>
+                               </form>
+
                             </div>
                         </div>
                         <div class="col">

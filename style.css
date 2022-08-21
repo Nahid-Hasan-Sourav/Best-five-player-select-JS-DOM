@@ -41,6 +41,20 @@ body{
     height: 447px;
 }
 
+.btn-common:focus{
+    background-color: tomato;
+}
+label{
+    color: white;
+    font-weight: bold;
+}
+input{
+    background-color: rgba(41, 39, 39, 0.703);
+    /* border:1px solid white;
+    width:50%;
+     */
+}
+
 @media (max-width:575px){
     .banner-text{
         width: 100%;
