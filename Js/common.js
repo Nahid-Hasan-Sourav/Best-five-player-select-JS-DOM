@@ -2,16 +2,16 @@
 function selectInputFieldValue(elementId){
     const inputField=document.getElementById(elementId);
     const inputFieldString=inputField.value;
-    console.log("InputFieldString: " + inputFieldString);
+    // console.log("InputFieldString: " + inputFieldString);
     const inputFieldNumber=Number(inputFieldString);
     
-    console.log("InputFieldNumber ",inputFieldNumber);
+    // console.log("InputFieldNumber ",inputFieldNumber);
 
     if( inputFieldString.length===0){
         alert("No Field Can not be empty");
         return 0;
     }
-    else if( inputFieldNumber<0){
+    else if(inputFieldNumber<0){
         alert("Number must be greater than 0");
         return 0;
     }

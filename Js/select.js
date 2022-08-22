@@ -10,13 +10,14 @@ for(const btn of allBtn){
         const li=document.createElement("li");
        
 
-        const length=selectTag.children.length;
+        const olLength=selectTag.children.length;
         // console.log(length);
 
         
-        if(length===5){
-            alert("sorry!! you can select only 5 players")
-            document.getElementById("five-selected-alert").style.display="block"
+        if( olLength === 5){
+           
+            document.getElementById("five-selected-alert").style.display="block";
+            alert("sorry!! you have already selected 5 players")
         }
         else{
             li.innerText=playerName;
