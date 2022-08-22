@@ -14,6 +14,7 @@ body{
     margin-bottom: 20px;
      
 }
+
 .banner-text{
     width: 79%;
 }
@@ -39,11 +40,10 @@ body{
 li{
     margin: 15px 0px;
 }
-.list-item{
-    /* height:365px; */
-    
-}
 
+.list-item{
+    height: 328px;
+}
 /* .btn-common:focus{
     background-color: tomato;
 } */
@@ -57,6 +57,31 @@ input{
     width:50%;
      */
 }
+.card{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(180, 180, 180, 0); 
+    box-shadow: 0px 0px 10px 2px rgba(180, 180, 180, 0);
+    background-color:#202428;
+    color: white;
+}
+#coach{
+    margin-left:32px !important;
+}
+.per-player label{
+    text-align: left;
+}
+.dot-align{
+    position: relative;
+    top:-16px;
+}
+/* .li-maker{
+    width: 30px;
+    border: 1px solid red;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 40px;
+    
+} */
+
 
 @media (max-width:575px){
     .banner-text{
@@ -76,6 +101,9 @@ input{
     }
     .banner-text p{
         text-align: center;
+    }
+    #coach{
+        margin-left:32px !important;
     }
 }
 
@@ -99,6 +127,9 @@ input{
         margin: 0 auto;
         height: 300px;
     }
+    #coach{
+        margin-left:32px !important;
+    }
 }
 
 
@@ -116,11 +147,28 @@ input{
     .banner-text h1{
         text-align: center;
     }
+    .list-item{
+        height:368px;
+        
+    }
 }
 
 
-@media (max-width: 1199.98px) { }
+@media (min-width:993px)and (max-width: 1199.98px) {
+    .list-item{
+        height: 330px;
+        background-color: aliceblue;
+        
+    }
+}
 
 
-@media (max-width: 1399.98px) {}
+@media (min-width:1200px) and (max-width: 1399.98px) {
+    .list-item{
+       
+    height: 327px;
+
+  
+    }
+}
 

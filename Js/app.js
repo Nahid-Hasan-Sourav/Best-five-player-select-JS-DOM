@@ -54,7 +54,7 @@ for(const btn of allBtn){
             li.innerText=playerName;
             selectTag.appendChild(li);
             btn.disabled = true;
-            if(  btn.disabled = true){
+            if(  btn.disabled == true){
                 btn.style.backgroundColor="grey";
             }
         }
@@ -69,13 +69,19 @@ document.getElementById("calculate-expense").addEventListener("click", function(
     const length=selectTag.children.length;
     console.log("calculate-btn",length);
 
-    const perPlayerCoast=selectInputFieldValue("per-players");
-    console.log("perPlayerCoast : ",perPlayerCoast);
+    if(length===0){
+        alert("sorry!! you can select only 1 players");
+    }
+    else{
+        const perPlayerCoast=selectInputFieldValue("per-players");
+        console.log("perPlayerCoast : ",perPlayerCoast);
 
-    const playerExpense=perPlayerCoast*length
-    console.log("playerExpense : ",playerExpense);
-
-    displaySetValue("player-expenses",playerExpense)
+        const playerExpense=perPlayerCoast*length
+        console.log("playerExpense : ",playerExpense);
+        
+        displaySetValue("player-expenses",playerExpense)
+    }
+    
 
 });
 
