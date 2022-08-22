@@ -40,13 +40,13 @@ li{
     margin: 15px 0px;
 }
 .list-item{
-    height:365px;
+    /* height:365px; */
     
 }
 
-.btn-common:focus{
+/* .btn-common:focus{
     background-color: tomato;
-}
+} */
 label{
     color: white;
     font-weight: bold;

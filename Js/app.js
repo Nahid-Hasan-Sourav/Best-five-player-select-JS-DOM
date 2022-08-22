@@ -54,6 +54,9 @@ for(const btn of allBtn){
             li.innerText=playerName;
             selectTag.appendChild(li);
             btn.disabled = true;
+            if(  btn.disabled = true){
+                btn.style.backgroundColor="grey";
+            }
         }
        
         
