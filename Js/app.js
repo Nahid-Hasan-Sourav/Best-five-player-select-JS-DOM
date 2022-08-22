@@ -47,8 +47,10 @@ for(const btn of allBtn){
         const length=selectTag.children.length;
         // console.log(length);
 
+        
         if(length>=5){
             alert("sorry!! you can select only 5 players")
+            document.getElementById("five-selected-alert").style.display="block"
         }
         else{
             li.innerText=playerName;
@@ -78,7 +80,7 @@ document.getElementById("calculate-expense").addEventListener("click", function(
 
         const playerExpense=perPlayerCoast*length
         console.log("playerExpense : ",playerExpense);
-        
+
         displaySetValue("player-expenses",playerExpense)
     }
     
@@ -91,7 +93,8 @@ document.getElementById("calculate-total").addEventListener("click",function(e) 
    const playerExpense=document.getElementById("player-expenses");
    const playerExpenseCoast=Number(playerExpense.innerText)
 
-   const totalCoast=managerCoast+coashCoast+ playerExpenseCoast;
+   let totalCoast=managerCoast+coashCoast+ playerExpenseCoast;
+   totalCoast=Number(totalCoast.toFixed(2));
    console.log("totalCoast : ",totalCoast);
    displaySetValue("total-coast",totalCoast);
 })
