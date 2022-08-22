@@ -14,7 +14,7 @@ for(const btn of allBtn){
         // console.log(length);
 
         
-        if(length>=5){
+        if(length===5){
             alert("sorry!! you can select only 5 players")
             document.getElementById("five-selected-alert").style.display="block"
         }

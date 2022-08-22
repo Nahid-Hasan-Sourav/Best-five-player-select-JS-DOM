@@ -16,10 +16,10 @@ body{
 }
 
 .banner-text{
-    width: 79%;
+    
 }
 .banner-text h1{
-    font-size:2.2rem;
+    font-size:2rem;
     text-align:left;
     font-family: 'Berkshire Swash', cursive;
 }
@@ -92,7 +92,7 @@ input{
        
     }
     .banner-text h1{
-        font-size:1.5rem;
+        font-size:1.2rem;
         font-weight: bold;
         margin-top: 20px;
         text-align: center;
@@ -108,11 +108,14 @@ input{
     #coach{
         margin-left:32px !important;
     }
+    .messi{
+        display: none;
+    }
 }
 
 
 @media (min-width:576px) and (max-width:688px){
-    .banner-text{
+    /* .banner-text{
         width: 100%;
        
     }
@@ -129,6 +132,54 @@ input{
         display: block;
         margin: 0 auto;
         height: 300px;
+    } */
+    .banner-text{
+        width: 100%;
+       
+    }
+    .banner-text h1{
+        font-size:1.2rem;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .ronaldo{
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .banner-text p{
+        text-align: center;
+    }
+    #coach{
+        margin-left:32px !important;
+    }
+    .messi{
+        display: none;
+    }
+    .banner-text h1{
+        font-size:1.7rem;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #messi{
+        order: 2;
+
+    }
+    .messi{
+        height:300px;
+        width: 300px !important;
+        display: block;
+        margin: 0 auto;
+        
+       
+    }
+    #benner-heading-text{
+        order: 1;
+    }
+    #ronaldo{
+        display: none;
     }
     #coach{
         margin-left:32px !important;
@@ -137,7 +188,7 @@ input{
 
 
 @media(min-width:689px) and (max-width:992px){
-    .banner-text{
+    /* .banner-text{
         width: 90%;
        
        
@@ -149,6 +200,27 @@ input{
     }
     .banner-text h1{
         text-align: center;
+    } */
+
+    .banner-text{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .messi{
+        
+        display:none;
+       
+    }
+    .ronaldo{
+        
+        height: 300px;
+    }
+    #ronaldo{
+        order: 1;
+    }
+    #benner-heading-text{
+        order: 2;
     }
     .list-item{
         height:368px;
@@ -162,6 +234,12 @@ input{
         height: 330px;
         background-color: aliceblue;
         
+    }
+    .banner-text h1{
+        font-size:1.5rem;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
     }
 }
 
