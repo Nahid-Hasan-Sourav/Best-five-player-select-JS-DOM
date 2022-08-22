@@ -12,7 +12,7 @@ document.getElementById("calculate-expense").addEventListener("click", function(
         console.log("perPlayerCoast : ",perPlayerCoast);
 
         let playerExpense=perPlayerCoast*olLength;
-            playerExpenseCoast=Number(playerExpense.toFixed(2));
+            playerExpense=Number(playerExpense.toFixed(2));
         console.log("playerExpense : ",playerExpense);
 
         displaySetValue("player-expenses",playerExpense)
