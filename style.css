@@ -208,19 +208,26 @@ input{
     }
 
     .messi{
+        height:300px;
+        width: 300px !important;
+        display: block;
+        margin: 0 auto;
         
-        display:none;
        
     }
-    .ronaldo{
+    /* .ronaldo{
         
         height: 300px;
+    } */
+    #messi{
+        order: 2;
     }
     #ronaldo{
-        order: 1;
+        order: 2;
+        display: none;
     }
     #benner-heading-text{
-        order: 2;
+        order: 1;
     }
     .list-item{
         height:368px;
